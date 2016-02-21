@@ -7,7 +7,6 @@
 <title>eCommerce template By Adobe Dreamweaver CC</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/eCommerceStyle.css" rel="stylesheet" type="text/css">
-<link href="css/LoginModal.css" rel="stylesheet" type="text/css">
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
 </head>
@@ -20,28 +19,7 @@
       <!-- Company Logo text -->Demo Store</div>
       
     <div id="headerLinks"><a href="#openModal" title="Login/Register">Login/Register</a><a href="#" title="Cart">Cart</a>
-    <div id="openModal" class="modalDialog">
-	<div>
-		<a href="#close" title="Close" class="close">X</a>
-				<form action="login.html" method="post">  
-					Name:<input type="text" name="name"/><br/>  
-					Password:<input type="password" name="password"/><br/>  
-			<a href="#registermodal">	Register New Account </a><input type="submit" value="login"/>  	
-				</form>
-	</div>
-	</div>
-	
-	<div id="registermodal" class="modalDialog">
-	<div>
-		<a href="#close" title="Close" class="close">X</a>
-				<form action="register.html" method="post">  
-					Email Address<input type="text" name="name"/><br/>  
-					Password:<input type="password" name="password"/><br/>
-					Confirm Password:<input type="password" name="password"/><br/>  
-			<a href="#openModal">	Already have an account ?? </a><input type="submit" value="Register"/>  	
-				</form>
-	</div>
-	</div>
+    <%@ include file="LoginForm.jsp" %>
 	
    
 </div>
